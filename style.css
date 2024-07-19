@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background: #FFEED9;
+    text-align: center;
+}
+
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #B46A4E;
+    font-size: 3rem;
+    padding: 2em 0 1em;
+}
+.rounds {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    color: #496871;
+    font-weight: 600;
+}
+
+.main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+img {
+    width: 30%;
+}
+.compImg {
+    transform: rotate(-20deg);
+}
+.userImg {
+    transform: rotate(20deg);
+}
+
+
+.triggerAnimation {
+    animation: Shake 0.2s linear 0s infinite alternate;
+}
+
+.status {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #496871;
+}
+
+.inpButtons button{
+    background: none;
+    border: none;
+}
+.inpButtons button img {
+    transition: all 0.3s ease-in-out;
+}
+
+.inpButtons img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes Shake {
+    0% {
+        transform: translateY(10);
+    }
+    50% {
+        transform: translateY(-10);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

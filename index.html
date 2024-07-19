@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script> src = "java.js"</script>
+    <title>Rock Paper scissor</title>
+</head>
+
+<body>
+    <h1 class="title" >Rock Paper and Scissors</h1>
+    <h2 class="rounds" >Round <span class="round"> 1 </span> </h2>
+
+    <div class="main">
+        <div class="comp">
+            <img class="compImg" id = "compImg" src="./images/leftrock.png" alt="">
+            <p>0</p>
+        </div>
+        
+        <p class="status"> Lets Play!</p>
+        
+        <div class="user">
+            <img class="userImg" id = "compImg" src="./images/rightrock.png" alt="">
+            <p>0</p>
+        </div>
+    </div>
+
+    <div class="input">
+        <p>make choice</p>
+        
+        <div class="inpButtons">
+            <button onclick="selRock()">
+                <img src="./images/rightrock.png" alt="">
+            </button>
+
+            <button onclick="selPaper()">
+                <img src="./images/rightpaper.png" alt="">
+            </button>
+            
+            <button onclick="selScissor()">
+                <img src="./images/rightscissor.png" alt="">
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>
